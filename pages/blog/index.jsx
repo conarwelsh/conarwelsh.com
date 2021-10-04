@@ -1,13 +1,13 @@
 import Head from "next/head"
 import Link from "next/link"
-import styles from "../styles/Home.module.css"
-import { getPosts } from "../lib/ghostApi"
+import { getPosts } from "../../lib/ghostApi"
+import styles from "../../styles/Blog.module.css"
 
-export default function Home({ posts }) {
+export default function Blog({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>~/conarwelsh</title>
+        <title>~/blog - Conar Welsh</title>
       </Head>
       <ul>
         {posts.map(post => (

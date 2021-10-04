@@ -1,10 +1,32 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 1px solid #606060;
+  padding: 0.5em;
+  margin-bottom: 4em;
+}
+
+.nav {
+  flex: 1;
+  text-align: right;
+}
+
+.nav a {
+  margin: 0 0.5em;
+}
+
+.nav a.active {
+  margin: 0 0.5em;
+  color: #0070f3;
+}
+
 .brand {
   color: #0070f3;
   position: relative;
   display: inline-block;
   line-height: 24px;
   font-size: 24px;
-  /* min-width: 360px; */
 }
 
 .brand::after {
@@ -19,11 +41,6 @@
   height: 24px;
   -webkit-animation: blink 1s step-end infinite;
   animation: blink 1s step-end infinite;
-}
-
-.nav {
-  padding: 0 0 0 0;
-  border-bottom: 1px solid #606060;
 }
 
 @-webkit-keyframes blink {
